@@ -1,0 +1,8 @@
+<h2>CSV Importer</h2>
+
+<p>Select and upload a CSV file of tasks.</p>
+
+<% form_tag({:action => 'execute'}, {:multipart => true}) do %>
+  <%= file_field_tag 'file', :size => 60%><br />
+  <%= submit_tag %>
+<% end %>
